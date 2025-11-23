@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Football — Ultimate Football Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header slide-down">
+        <h1 class="logo">Football</h1>
+        <nav class="nav">
+            <a href="#live">Live</a>
+            <a href="#fixtures">Fixtures</a>
+            <a href="#standings">Standings</a>
+            <a href="#players">Players</a>
+            <a href="#teams">Teams</a>
+            <a href="#news">News</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#comparison">Compare</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+        <h2>All Football Updates in One Place ⚽</h2>
+        <p>Live scores, standings, player stats, team info, and more!</p>
+        <button class="btn" onclick="scrollToLive()">See Live Scores</button>
+    </section>
+
+    <!-- Live Scores -->
+    <section id="live" class="section card slide-up">
+        <h3>⚡ Live Scores</h3>
+        <div id="live-scores"></div>
+    </section>
+
+    <!-- Live Match Commentary -->
+    <section id="commentary" class="section card slide-up">
+        <h3>📝 Live Match Commentary</h3>
+        <div id="commentary-list"></div>
+    </section>
+
+    <!-- Fixtures -->
+    <section id="fixtures" class="section card slide-up">
+        <h3>📅 Upcoming Fixtures</h3>
+        <div id="fixtures-list"></div>
+    </section>
+
+    <!-- League Standings -->
+    <section id="standings" class="section card slide-up">
+        <h3>🏆 League Standings</h3>
+        <table id="standings-table"></table>
+    </section>
+
+    <!-- Player Information -->
+    <section id="players" class="section card slide-up">
+        <h3>👤 Player Information</h3>
+        <div id="players-list"></div>
+    </section>
+
+    <!-- Player Comparison Tool -->
+    <section id="comparison" class="section card slide-up">
+        <h3>⚔️ Player Comparison Tool</h3>
+        <div id="comparison-tool">
+            <select id="player1"></select>
+            <select id="player2"></select>
+            <button onclick="comparePlayers()">Compare</button>
+            <div id="comparison-result"></div>
+        </div>
+    </section>
+
+    <!-- Team Information -->
+    <section id="teams" class="section card slide-up">
+        <h3>🏟 Team Information</h3>
+        <div id="teams-list"></div>
+    </section>
+
+    <!-- Team vs Team Stats -->
+    <section id="team-stats" class="section card slide-up">
+        <h3>📊 Team vs Team Stats</h3>
+        <div id="team-stats-list"></div>
+    </section>
+
+    <!-- Transfer Market Values -->
+    <section id="transfers" class="section card slide-up">
+        <h3>💰 Transfer Market Values</h3>
+        <div id="transfer-list"></div>
+    </section>
+
+    <!-- Search Engine + Filters -->
+    <section id="search" class="section card slide-up">
+        <h3>🔍 Search Players/Teams</h3>
+        <input type="text" id="search-input" placeholder="Search..." onkeyup="searchItems()" />
+        <div id="search-results"></div>
+    </section>
+
+    <!-- Football News -->
+    <section id="news" class="section card slide-up">
+        <h3>Latest Football News</h3>
+        <div id="news-list"></div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section card slide-up">
+        <h3>Gallery</h3>
+        <div id="gallery-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+        © 2025 Football — All rights reserved.
+        Developed by Jack Sparrow.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
